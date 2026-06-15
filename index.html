@@ -1,619 +1,550 @@
-<!DOCTYPE html><html class="dark" lang="id"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport">
-<title>EFD.dev | Elza Fikri Dinata Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Geist:wght@600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-surface-variant": "#bbc9cf",
-                    "on-tertiary-fixed": "#281900",
-                    "surface-container-highest": "#2f3639",
-                    "on-error-container": "#ffdad6",
-                    "outline": "#859398",
-                    "on-tertiary": "#432c00",
-                    "inverse-primary": "#00677e",
-                    "tertiary-fixed": "#ffdeae",
-                    "secondary-fixed": "#eaddff",
-                    "tertiary-fixed-dim": "#ffba3d",
-                    "error": "#ffb4ab",
-                    "tertiary": "#ffd9a1",
-                    "on-tertiary-fixed-variant": "#604100",
-                    "surface-container-low": "#161d1f",
-                    "on-background": "#dde3e7",
-                    "inverse-surface": "#dde3e7",
-                    "on-primary-container": "#00586b",
-                    "on-surface": "#dde3e7",
-                    "on-error": "#690005",
-                    "tertiary-container": "#feb528",
-                    "on-secondary": "#3f008e",
-                    "on-secondary-container": "#c9aeff",
-                    "primary-fixed": "#b4ebff",
-                    "surface-container-lowest": "#080f12",
-                    "surface-variant": "#2f3639",
-                    "outline-variant": "#3c494e",
-                    "surface-container": "#1a2123",
-                    "on-primary-fixed-variant": "#004e5f",
-                    "on-secondary-fixed": "#25005a",
-                    "on-primary": "#003642",
-                    "primary-fixed-dim": "#3cd7ff",
-                    "background": "#0e1417",
-                    "surface": "#0e1417",
-                    "primary-container": "#00d4ff",
-                    "on-tertiary-container": "#6c4900",
-                    "on-primary-fixed": "#001f27",
-                    "surface-container-high": "#242b2e",
-                    "secondary": "#d2bbff",
-                    "surface-tint": "#3cd7ff",
-                    "on-secondary-fixed-variant": "#5a00c6",
-                    "surface-bright": "#333a3d",
-                    "secondary-container": "#6001d1",
-                    "surface-dim": "#0e1417",
-                    "error-container": "#93000a",
-                    "secondary-fixed-dim": "#d2bbff",
-                    "inverse-on-surface": "#2b3134",
-                    "primary": "#a8e8ff"
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>Khalila Alzahra Ghairani | Birthday Celebration</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#fadadd",
+                        "on-secondary-container": "#626374",
+                        "secondary-fixed": "#e1e1f5",
+                        "tertiary-fixed": "#ffe088",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-secondary-fixed-variant": "#444655",
+                        "surface-container-low": "#f3f3f4",
+                        "on-background": "#1a1c1c",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container": "#eeeeee",
+                        "outline-variant": "#d2c3c4",
+                        "primary": "#70585b",
+                        "on-primary-fixed": "#281719",
+                        "inverse-on-surface": "#f0f1f1",
+                        "secondary-fixed-dim": "#c5c5d8",
+                        "on-tertiary-container": "#7a6100",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "tertiary-container": "#ffdf84",
+                        "inverse-primary": "#debfc2",
+                        "outline": "#807475",
+                        "primary-fixed-dim": "#debfc2",
+                        "surface": "#f9f9f9",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f9f9f9",
+                        "on-primary-fixed-variant": "#574144",
+                        "on-secondary-fixed": "#191b29",
+                        "surface-tint": "#70585b",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#765e61",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-container": "#e1e1f5",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#5c5d6e",
+                        "on-surface": "#1a1c1c",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#4f4445",
+                        "tertiary": "#735c00",
+                        "primary-fixed": "#fbdbde"
+                    },
+                    fontFamily: {
+                        'display-birthday': ['Epilogue', 'sans-serif'],
+                        'body-md': ['Plus Jakarta Sans', 'sans-serif'],
+                        'cursive': ['Great Vibes', 'cursive']
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "body-lg": ["Inter"],
-                    "label-caps": ["Inter"],
-                    "display-lg": ["Geist"],
-                    "body-md": ["Inter"],
-                    "headline-md": ["Geist"],
-                    "code-sm": ["JetBrains Mono"],
-                    "display-lg-mobile": ["Geist"]
-            }
-          },
-        },
-      }
+        }
     </script>
-<style>
-      body {
-        background-color: #0e1417;
-        color: #dde3e7;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-      }
-      .glass-card {
-        background: rgba(22, 27, 34, 0.6);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-      .glass-card:hover {
-        border: 1px solid transparent;
-        background-image: linear-gradient(rgba(22, 27, 34, 0.6), rgba(22, 27, 34, 0.6)), linear-gradient(to right, #a8e8ff, #d2bbff);
-        background-origin: border-box;
-        background-clip: padding-box, border-box;
-      }
-      .glow-primary {
-        box-shadow: 0 0 40px rgba(168, 232, 255, 0.15);
-      }
-      .typewriter::after {
-        content: "|";
-        animation: blink 0.7s infinite;
-      }
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-      }
-      .tech-chip {
-        background: rgba(56, 189, 248, 0.1);
-        color: #3cd7ff;
-      }
-      .custom-scrollbar::-webkit-scrollbar {
-        width: 6px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-track {
-        background: #0e1417;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb {
-        background: #2f3639;
-        border-radius: 10px;
-      }
+
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 8px 32px 0 rgba(250, 218, 221, 0.3);
+        }
+
+        .gold-border {
+            border: 1.5px solid #D4AF37;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(105vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { transform: translateY(-15vh) rotate(360deg); opacity: 0; }
+        }
+
+        .balloon {
+            position: fixed;
+            bottom: -100px;
+            pointer-events: none;
+            z-index: 1;
+            animation: float 12s linear infinite;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(-45deg, #f9f9f9, #fadadd, #e1e1f5, #f3f3f4);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .fade-in-ready {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
-<body class="font-body-md text-body-md custom-scrollbar">
+<body class="gradient-bg min-h-screen font-body-md text-on-surface overflow-x-hidden antialiased">
 
-<header class="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-xl border-b border-white/10">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-<div class="flex items-center gap-3 sm:gap-4">
-<div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-primary/20 shrink-0">
-<img alt="Elza Fikri Dinata" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcRAfKOhGgPJJBqMRmGJrK4XI7RTnBvWDfdi50DcIU77D2zkwWS0HbqW2RY7DMwR2tis1bY8vkj-xjK2JiTPdwlmYiq916fUpTxv1pedIof2am9v5Z2191ZgtS7rnp0QWg-O1f1dsXDe6xt-EiBxlLGq8G21mi2JrUpZk_-lfEp3aQ4_YyC1rOGoPNY7eb0omoCTJQ_g3ob0Xbu7dJ84YgeJdfpho0CXMKVqzyjnHw7Vev5DQrU9rLBe9wndMG3FL0OsXJ_INtL3k">
-</div>
-<span class="font-display-lg text-[20px] sm:text-[24px] font-bold text-primary tracking-tighter">EFD.dev</span>
-</div>
-<nav class="hidden md:flex gap-6 items-center">
-<a class="text-primary font-bold transition-all" href="#home">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#skills">Skills</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#projects">Projects</a>
-<a class="bg-primary text-on-primary px-5 py-2 rounded-lg font-bold hover:translate-y-[-2px] transition-transform active:scale-95" href="#contact">Hire Me</a>
-</nav>
-<button id="menu-toggle" class="md:hidden text-primary focus:outline-none p-1" aria-label="Toggle Menu">
-<span class="material-symbols-outlined text-2xl sm:text-3xl">menu</span>
-</button>
-</div>
-<div id="mobile-nav" class="hidden md:hidden bg-background/95 backdrop-blur-2xl border-b border-white/10 px-4 sm:px-6 py-4 space-y-3 transition-all duration-300">
-<a class="block text-primary font-bold py-1" href="#home">Home</a>
-<a class="block text-on-surface-variant hover:text-primary transition-colors py-1" href="#about">About</a>
-<a class="block text-on-surface-variant hover:text-primary transition-colors py-1" href="#skills">Skills</a>
-<a class="block text-on-surface-variant hover:text-primary transition-colors py-1" href="#projects">Projects</a>
-<a class="block text-center bg-primary text-on-primary px-4 py-2.5 rounded-lg font-bold mt-2" href="#contact">Hire Me</a>
-</div>
-</header>
+    <!-- GERBANG UNDANGAN: Mencegah error pembatasan suara dari browser -->
+    <div id="welcome-overlay" class="fixed inset-0 z-[100] flex items-center justify-center bg-[#70585b]/80 backdrop-blur-md p-4 transition-all duration-500">
+        <div class="glass-card max-w-md w-full p-8 text-center rounded-[32px] border border-white/40 shadow-2xl animate-fade-in">
+            <div class="w-16 h-16 bg-white/80 text-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                <span class="material-symbols-outlined text-3xl animate-bounce">redeem</span>
+            </div>
+            <h2 class="font-display-birthday text-2xl font-bold text-primary mb-3"> ✨✨✨✨✨</h2>
+            <p class="text-sm text-on-secondary-container mb-6 leading-relaxed">
+                Ada kejutan ulang tahun yang disiapkan khusus untuk <strong>Khalila Alzahra Ghairani</strong>. Buka untuk mengaktifkan musik & kejutan indah!
+            </p>
+            <button onclick="startCelebration()" class="w-full py-4 bg-primary text-white font-bold uppercase tracking-wider rounded-full shadow-lg hover:bg-primary/90 transition-all duration-300 transform active:scale-95 text-xs">
+                🎁 Buka Kejutan Sekarang
+            </button>
+        </div>
+    </div>
 
-<section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden" id="home">
-<div class="relative z-10 w-full max-w-[1200px] mx-auto px-4 sm:px-6 text-center" data-aos="zoom-in">
-<div class="glass-card p-6 sm:p-8 md:p-12 rounded-xl max-w-2xl mx-auto glow-primary">
-<div class="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden border-2 border-primary p-1 shrink-0">
-<img alt="Portrait" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOJu17KiE3QfD3fq4OUeUeGZQ1VMo2dpXVqSZoko6yHiFLWQISUj2oDg4llS56f8AUIghMzdX7EV_n-FPK3BECt6T3p3ktp8Nm6DA9wRI0VTIkA53D29BxGftrP_WP4lUeOHUybxIzM5vsHTghijS4rkkx3ERtYm5Rom4fGHAe6NJ5LqDHoJFXraF4DJ8VWGMtq5jNju-uhKdpZrGQ8DBsjrzXVpAvIjQyZaMIzQib4bBR39-G8ASHRZhYNUGz1mLEOhEhE7Oc7dM">
-</div>
-<h1 class="font-display-lg text-[28px] sm:text-[42px] md:text-[56px] lg:text-[64px] text-primary mb-2 font-extrabold tracking-tight leading-tight break-words uppercase">ELZA FIKRI DINATA</h1>
-<div class="h-8 mb-6 sm:mb-8 flex items-center justify-center">
-<span class="font-code-sm text-secondary text-sm sm:text-base md:text-lg typewriter uppercase tracking-widest" id="typing-roles"></span>
-</div>
-<div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-<button class="w-full sm:w-auto bg-primary text-on-primary px-6 py-3 rounded-lg font-bold hover:translate-y-[-2px] transition-transform active:scale-95 glow-primary text-sm sm:text-base">Download CV</button>
-<button class="w-full sm:w-auto border border-primary text-primary px-6 py-3 rounded-lg font-bold hover:bg-primary/10 transition-colors text-sm sm:text-base">See Portfolio</button>
-<button class="w-full sm:w-auto border border-secondary text-secondary px-6 py-3 rounded-lg font-bold hover:bg-secondary/10 transition-colors text-sm sm:text-base">Contact Me</button>
-</div>
-</div>
-</div>
-<div class="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-0.5 hidden sm:flex">
-<span class="text-on-surface-variant text-[10px] uppercase tracking-wider font-bold">Scroll Down</span>
-<span class="material-symbols-outlined text-primary text-xl">expand_more</span>
-</div>
-</section>
+    <!-- Balloon Container -->
+    <div id="balloon-container" class="fixed inset-0 pointer-events-none z-0"></div>
 
-<section class="py-16 md:py-24 bg-surface" id="about">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-<div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-<div class="relative w-full max-w-[400px] mx-auto md:max-w-none" data-aos="fade-right">
-<div class="aspect-square glass-card rounded-2xl overflow-hidden p-3 sm:p-4">
-<img alt="About Image" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOJu17KiE3QfD3fq4OUeUeGZQ1VMo2dpXVqSZoko6yHiFLWQISUj2oDg4llS56f8AUIghMzdX7EV_n-FPK3BECt6T3p3ktp8Nm6DA9wRI0VTIkA53D29BxGftrP_WP4lUeOHUybxIzM5vsHTghijS4rkkx3ERtYm5Rom4fGHAe6NJ5LqDHoJFXraF4DJ8VWGMtq5jNju-uhKdpZrGQ8DBsjrzXVpAvIjQyZaMIzQib4bBR39-G8ASHRZhYNUGz1mLEOhEhE7Oc7dM">
-</div>
-<div class="absolute -bottom-4 -right-4 glass-card p-4 rounded-xl glow-primary hidden lg:block">
-<p class="font-display-lg text-primary text-2xl font-bold">Indonesia</p>
-<p class="text-on-surface-variant text-xs uppercase tracking-widest">Base Location</p>
-</div>
-</div>
-<div data-aos="fade-left" class="w-full">
-<h2 class="text-[28px] sm:text-[32px] font-semibold text-primary mb-4 font-display-lg text-center md:text-left">Tentang Saya</h2>
-<p class="text-base sm:text-lg text-on-surface-variant mb-6 sm:mb-8 leading-relaxed text-center md:text-left">
-                        Halo! Saya adalah lulusan baru (Fresh Graduate) dari SMK jurusan Rekayasa Perangkat Lunak. Saya memiliki passion mendalam dalam pengembangan web dan infrastruktur IT. Melalui pengalaman magang dan partisipasi dalam LKS IT Network Systems 2025, saya terus mengasah kemampuan teknis untuk memberikan solusi digital terbaik.
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 w-full z-50 bg-white/40 backdrop-blur-xl border-b border-white/20 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
+            <div class="flex items-center gap-2 sm:gap-3">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-xl sm:text-2xl animate-spin">celebration</span>
+                </div>
+                <span class="font-display-birthday text-base sm:text-lg lg:text-xl font-bold text-primary truncate max-w-[180px] sm:max-w-xs">
+                    Khalila Alzahra Ghairani
+                </span>
+            </div>
+            <nav class="flex items-center gap-4 sm:gap-6 lg:gap-8">
+                <a class="hidden md:inline-block text-xs font-bold uppercase tracking-wider text-primary hover:opacity-70 transition-opacity" href="#hero">Beranda</a>
+                <a class="hidden md:inline-block text-xs font-bold uppercase tracking-wider text-primary hover:opacity-70 transition-opacity" href="#prayers">Doa</a>
+                <a class="hidden md:inline-block text-xs font-bold uppercase tracking-wider text-primary hover:opacity-70 transition-opacity" href="#surprise">Kejutan</a>
+                
+                <button class="flex items-center gap-1 bg-primary/10 px-3 py-1.5 rounded-full text-primary hover:bg-primary/20 transition-all duration-300 text-xs font-bold shadow-sm" onclick="toggleMusic(event)">
+                    <span class="material-symbols-outlined text-sm" id="navMusicIcon">play_arrow</span>
+                    <span class="hidden sm:inline" id="navMusicText">Putar Musik</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-16">
+        <!-- Hero Section -->
+        <section class="relative min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 sm:px-6 lg:px-8 text-center" id="hero">
+            <div class="max-w-4xl mx-auto py-12 flex flex-col items-center">
+                <span class="text-xs sm:text-sm font-bold text-primary tracking-[0.25em] sm:tracking-[0.4em] block mb-4 uppercase bg-white/60 px-4 py-1.5 rounded-full shadow-sm">
+                    ✨ HAPPY SWEET 17TH ✨
+                </span>
+                
+                <h1 class="font-display-birthday text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-primary font-extrabold mb-6 sm:mb-8 leading-tight tracking-tight">
+                    🎉 Selamat Ulang Tahun <br class="hidden sm:block"/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-fixed-dim to-primary drop-shadow-sm px-2">
+                        Khalila Alzahra Ghairani
+                    </span> 🎉
+                </h1>
+                
+                <p class="text-sm sm:text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-12 px-2">
+                    Semoga hari spesialmu dipenuhi kebahagiaan, cinta, dan keberkahan. Teruslah bersinar dan menginspirasi dunia di sekitarmu.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
+                    <button class="w-full sm:w-auto px-8 py-3.5 bg-primary text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2" onclick="triggerConfetti()">
+                        <span class="material-symbols-outlined text-lg">favorite</span> Kirim Ucapan Selamat
+                    </button>
+                    <a class="w-full sm:w-auto px-8 py-3.5 glass-card rounded-full text-xs font-bold uppercase tracking-wider text-primary gold-border hover:bg-white/70 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2" href="#prayers">
+                        <span class="material-symbols-outlined text-lg">auto_awesome</span> Lihat Doa & Harapan
+                    </a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-12 left-6 sm:left-12 text-3xl sm:text-5xl animate-bounce duration-1000 select-none">🎂</div>
+            <div class="absolute top-24 right-6 sm:right-16 text-3xl sm:text-5xl animate-pulse select-none">✨</div>
+            <div class="absolute top-1/3 left-4 sm:left-24 text-2xl sm:text-4xl opacity-30 animate-spin duration-3000 select-none">🌸</div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 flex justify-center">
+            <div class="glass-card p-8 sm:p-16 md:p-20 rounded-[32px] sm:rounded-[48px] lg:rounded-[60px] max-w-4xl text-center relative overflow-hidden shadow-xl w-full fade-in-ready">
+                <div class="absolute -top-4 -right-4 p-4 opacity-10 text-7xl sm:text-9xl select-none">🌸</div>
+                <div class="absolute -bottom-4 -left-4 p-4 opacity-10 text-7xl sm:text-9xl select-none">💖</div>
+                
+                <h2 class="font-cursive text-5xl sm:text-7xl lg:text-8xl text-primary mb-6 sm:mb-10">With Love, Always</h2>
+                <div class="relative z-10">
+                    <p class="text-base sm:text-xl md:text-2xl text-primary/90 leading-relaxed italic font-medium max-w-3xl mx-auto px-2">
+                        "Selamat ulang tahun Khalila Alzahra Ghairani. Semoga di usia yang baru ini kamu selalu diberikan kesehatan, kebahagiaan, kemudahan dalam setiap urusan, serta dikelilingi oleh orang-orang yang menyayangimu. Teruslah menjadi pribadi yang baik, kuat, dan membanggakan. Semoga semua cita-cita dan impianmu dapat tercapai."
                     </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-<div class="glass-card p-4 rounded-lg flex items-center gap-3.5">
-<span class="material-symbols-outlined text-primary shrink-0">person</span>
-<div>
-<p class="text-[11px] text-on-surface-variant uppercase tracking-wider">Nama</p>
-<p class="font-bold text-sm sm:text-base">Elza Fikri Dinata</p>
-</div>
-</div>
-<div class="glass-card p-4 rounded-lg flex items-center gap-3.5">
-<span class="material-symbols-outlined text-primary shrink-0">school</span>
-<div>
-<p class="text-[11px] text-on-surface-variant uppercase tracking-wider">Pendidikan</p>
-<p class="font-bold text-sm sm:text-base">SMK RPL</p>
-</div>
-</div>
-<div class="glass-card p-4 rounded-lg flex items-center gap-3.5">
-<span class="material-symbols-outlined text-primary shrink-0">terminal</span>
-<div>
-<p class="text-[11px] text-on-surface-variant uppercase tracking-wider">Bidang</p>
-<p class="font-bold text-sm sm:text-base">Web Dev & IT</p>
-</div>
-</div>
-<div class="glass-card p-4 rounded-lg flex items-center gap-3.5">
-<span class="material-symbols-outlined text-primary shrink-0">badge</span>
-<div>
-<p class="text-[11px] text-on-surface-variant uppercase tracking-wider">Status</p>
-<p class="font-bold text-sm sm:text-base">Fresh Graduate</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+                </div>
+            </div>
+        </section>
 
-<section class="py-10 bg-surface-container-lowest">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-<div data-aos="zoom-in">
-<p class="font-display-lg text-primary text-3xl sm:text-4xl md:text-5xl mb-1 font-extrabold">2</p>
-<p class="text-on-surface-variant text-[11px] uppercase tracking-wider font-semibold">Magang</p>
-</div>
-<div data-aos="zoom-in" data-aos-delay="100">
-<p class="font-display-lg text-secondary text-3xl sm:text-4xl md:text-5xl mb-1 font-extrabold">6+</p>
-<p class="text-on-surface-variant text-[11px] uppercase tracking-wider font-semibold">Proyek Web</p>
-</div>
-<div data-aos="zoom-in" data-aos-delay="200">
-<p class="font-display-lg text-primary text-3xl sm:text-4xl md:text-5xl mb-1 font-extrabold">1</p>
-<p class="text-on-surface-variant text-[11px] uppercase tracking-wider font-semibold">Kompetisi LKS</p>
-</div>
-<div data-aos="zoom-in" data-aos-delay="300">
-<p class="font-display-lg text-secondary text-3xl sm:text-4xl md:text-5xl mb-1 font-extrabold">6+</p>
-<p class="text-on-surface-variant text-[11px] uppercase tracking-wider font-semibold">Teknologi</p>
-</div>
-</div>
-</div>
-</section>
+        <!-- Prayer Cards Section -->
+        <section class="py-16 sm:py-24 bg-white/30 backdrop-blur-md" id="prayers">
+            <div class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-12 sm:mb-16 text-center">
+                <h2 class="font-display-birthday text-2xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">Untaian Doa & Harapan</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full opacity-30"></div>
+            </div>
+            
+            <div class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                    <div class="glass-card p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] border-t-4 border-primary hover:scale-[102%] transition-all duration-300 w-full flex flex-col justify-between shadow-sm fade-in-ready">
+                        <div>
+                            <div class="text-4xl mb-4 sm:mb-6">🌸</div>
+                            <h3 class="font-display-birthday text-lg sm:text-xl font-bold text-primary mb-2 sm:mb-3">Kesehatan & Berkah</h3>
+                            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Semoga Allah SWT selalu melimpahkan kesehatan fisik, ketenangan hati, dan umur yang penuh keberkahan.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] border-t-4 border-primary hover:scale-[102%] transition-all duration-300 w-full flex flex-col justify-between shadow-sm fade-in-ready">
+                        <div>
+                            <div class="text-4xl mb-4 sm:mb-6">✨</div>
+                            <h3 class="font-display-birthday text-lg sm:text-xl font-bold text-primary mb-2 sm:mb-3">Langkah Dimudahkan</h3>
+                            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Semoga setiap langkah perjuanganmu dimudahkan serta diberikan kesuksesan yang indah dalam pendidikan, karier, dan kehidupan.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] border-t-4 border-primary hover:scale-[102%] transition-all duration-300 w-full flex flex-col justify-between shadow-sm fade-in-ready">
+                        <div>
+                            <div class="text-4xl mb-4 sm:mb-6">🛡️</div>
+                            <h3 class="font-display-birthday text-lg sm:text-xl font-bold text-primary mb-2 sm:mb-3">Perlindungan Illahi</h3>
+                            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Semoga kamu selalu dijaga dan dilindungi dari segala marabahaya serta dipenuhi rasa damai dan bahagia setiap hari.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] border-t-4 border-primary hover:scale-[102%] transition-all duration-300 w-full flex flex-col justify-between shadow-sm fade-in-ready">
+                        <div>
+                            <div class="text-4xl mb-4 sm:mb-6">🌙</div>
+                            <h3 class="font-display-birthday text-lg sm:text-xl font-bold text-primary mb-2 sm:mb-3">Pribadi Salehah</h3>
+                            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Semoga menjadi pribadi yang semakin bertakwa, berbakti tulus kepada orang tua, dan menjadi manfaat bagi sesama.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] border-t-4 border-primary hover:scale-[102%] transition-all duration-300 w-full flex flex-col justify-between shadow-sm fade-in-ready">
+                        <div>
+                            <div class="text-4xl mb-4 sm:mb-6">🎯</div>
+                            <h3 class="font-display-birthday text-lg sm:text-xl font-bold text-primary mb-2 sm:mb-3">Mimpi Terwujud</h3>
+                            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Semoga seluruh resolusi, cita-cita tinggi, dan harapan terbaikmu dikabulkan dengan cara yang paling indah dan tepat.</p>
+                        </div>
+                    </div>
+                    <div class="glass-card p-6 sm:p-8 rounded-[24px] sm:rounded-[32px] border-t-4 border-primary hover:scale-[102%] transition-all duration-300 w-full flex flex-col justify-between shadow-sm fade-in-ready">
+                        <div>
+                            <div class="text-4xl mb-4 sm:mb-6">💖</div>
+                            <h3 class="font-display-birthday text-lg sm:text-xl font-bold text-primary mb-2 sm:mb-3">Cinta Abadi</h3>
+                            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">Semoga harimu selalu dikelilingi oleh kasih sayang yang tulus, murni, dan hangat dari keluarga serta para sahabat sejati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="py-16 md:py-24" id="skills">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-<h2 class="text-[28px] sm:text-[32px] font-semibold text-primary text-center mb-10 md:mb-16 font-display-lg" data-aos="fade-up">Skill Teknis & Non-Teknis</h2>
-<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="glass-card p-5 sm:p-6 rounded-xl" data-aos="fade-up" data-aos-delay="0">
-<h3 class="font-bold text-lg mb-5 flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">data_object</span> Frontend
-                    </h3>
-<div class="space-y-4">
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">HTML</span><span class="text-xs">90%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary" style="width: 90%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">CSS/Tailwind</span><span class="text-xs">85%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary" style="width: 85%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">JavaScript</span><span class="text-xs">80%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary" style="width: 80%"></div>
-</div>
-</div>
-<div class="flex flex-wrap gap-1.5 pt-1">
-<span class="tech-chip font-code-sm px-2 py-0.5 rounded text-[10px]">Bootstrap 30%</span>
-<span class="tech-chip font-code-sm px-2 py-0.5 rounded text-[10px]">Angular 30%</span>
-</div>
-</div>
-</div>
-<div class="glass-card p-5 sm:p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
-<h3 class="font-bold text-lg mb-5 flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary">database</span> Backend
-                    </h3>
-<div class="space-y-4">
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">Laravel</span><span class="text-xs">30%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-secondary" style="width: 30%"></div>
-</div>
-</div>
-<p class="text-[12px] text-on-surface-variant italic leading-relaxed">Saat ini sedang mendalami arsitektur MVC dan API development dengan PHP/Laravel.</p>
-</div>
-</div>
-<div class="glass-card p-5 sm:p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
-<h3 class="font-bold text-lg mb-5 flex items-center gap-2">
-<span class="material-symbols-outlined text-primary">router</span> IT & Network
-                    </h3>
-<div class="space-y-4">
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">IT Support</span><span class="text-xs">70%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary" style="width: 70%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">Hardware Maintenance</span><span class="text-xs">70%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary" style="width: 70%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">Troubleshooting</span><span class="text-xs">75%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-primary" style="width: 75%"></div>
-</div>
-</div>
-<div class="flex flex-wrap gap-1.5 pt-1">
-<span class="tech-chip font-code-sm px-2 py-0.5 rounded text-[10px]">Cisco & MikroTik Basic</span>
-</div>
-</div>
-</div>
-<div class="glass-card p-5 sm:p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
-<h3 class="font-bold text-lg mb-5 flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary">psychology</span> Soft Skills
-                    </h3>
-<div class="space-y-4">
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">Communication</span><span class="text-xs">85%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-secondary" style="width: 85%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">Adaptability</span><span class="text-xs">90%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-secondary" style="width: 90%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between mb-1"><span class="text-xs">Problem Solving</span><span class="text-xs">80%</span></div>
-<div class="h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
-<div class="h-full bg-secondary" style="width: 80%"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <!-- Surprise Section -->
+        <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-center" id="surprise">
+            <div class="max-w-3xl mx-auto glass-card p-8 sm:p-16 rounded-[32px] sm:rounded-[48px] gold-border relative overflow-hidden shadow-xl w-full fade-in-ready">
+                <h3 class="font-display-birthday text-2xl sm:text-4xl font-bold text-primary mb-8">Ada Sesuatu Untukmu!</h3>
+                
+                <button class="group relative inline-flex items-center justify-center p-0.5 overflow-hidden font-bold rounded-full shadow-lg transform hover:scale-105 active:scale-95 transition-all duration-300 w-full sm:w-auto" id="surpriseBtn" onclick="showSurprise()">
+                    <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-primary to-primary-container opacity-100 group-hover:from-primary-container group-hover:to-primary transition-all duration-500 ease-out"></span>
+                    <span class="relative px-8 sm:px-12 py-4 text-white font-bold text-sm sm:text-base uppercase tracking-wider flex items-center justify-center gap-2 bg-neutral-900/10 rounded-full w-full">
+                        <span class="material-symbols-outlined text-xl" id="giftIcon">redeem</span> 
+                        <span id="giftBtnText">Klik untuk Kejutan</span>
+                    </span>
+                </button>
+                
+                <div class="hidden mt-8 p-6 sm:p-10 bg-white/60 rounded-[24px] border border-white/40 shadow-inner" id="surpriseMsg">
+                    <p class="font-display-birthday text-primary font-bold text-xl sm:text-2xl md:text-3xl leading-relaxed">
+                        "Semoga panjang umur, sehat selalu, dan bahagia selamanya, Khalila Alzahra Ghairani ❤️"
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section class="py-16 md:py-24 bg-surface-container-low" id="internship">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-<h2 class="text-[28px] sm:text-[32px] font-semibold text-primary mb-12 md:mb-16 text-center font-display-lg">Pengalaman Magang</h2>
-<div class="relative max-w-4xl mx-auto space-y-8 md:space-y-12">
-<div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2"></div>
-<div class="relative flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8" data-aos="fade-right">
-<div class="w-full md:w-1/2 text-left md:text-right hidden md:block">
-<div class="flex md:justify-end mb-3">
-<div class="w-14 h-14 bg-[#161B22] p-2 rounded-xl border border-white/10 flex items-center justify-center overflow-hidden">
-<img alt="XTEND Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrk0R6N8yWqIo8oUPRa6ymg_yb_aOmgYWwLVvnY51WjwY9bzl15C1dDcW2dQ-FTe4v3ka_Fc8cOeQC-4lBe4LSadrSF4ShNlRxOXXcFryfC7o-yYpzSCMvnG7wUP0KKmimCkbtetyXH7WzcTQobJM1gKlD9Jph8rMFBMyP51tCyT8wcYY-VsSWJ2LWX3IEzjOq06lRCuB4dxjP_AY3yCC6SDYNmrLRycBRw7sZ5WPWTczUZSFrkdd2HgcV3BABUyWqbGXpESCMobo">
-</div>
-</div>
-<h3 class="font-bold text-xl text-primary">XTEND Indonesia</h3>
-<p class="text-secondary text-xs uppercase tracking-widest mb-3">Frontend Developer Intern</p>
-<p class="text-sm text-on-surface-variant leading-relaxed">Membangun antarmuka web yang responsif dan optimasi UI/UX untuk aplikasi perusahaan.</p>
-</div>
-<div class="absolute left-4 md:static z-10 w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 glow-primary border-4 border-background -translate-x-1/2 md:translate-x-0">
-<span class="material-symbols-outlined text-background text-sm font-bold">work</span>
-</div>
-<div class="w-full pl-10 md:pl-0 md:w-1/2 glass-card p-5 sm:p-6 rounded-xl md:hidden">
-<div class="w-14 h-14 mb-3 bg-[#161B22] p-2 rounded-xl border border-white/10 flex items-center justify-center overflow-hidden">
-<img alt="XTEND Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrk0R6N8yWqIo8oUPRa6ymg_yb_aOmgYWwLVvnY51WjwY9bzl15C1dDcW2dQ-FTe4v3ka_Fc8cOeQC-4lBe4LSadrSF4ShNlRxOXXcFryfC7o-yYpzSCMvnG7wUP0KKmimCkbtetyXH7WzcTQobJM1gKlD9Jph8rMFBMyP51tCyT8wcYY-VsSWJ2LWX3IEzjOq06lRCuB4dxjP_AY3yCC6SDYNmrLRycBRw7sZ5WPWTczUZSFrkdd2HgcV3BABUyWqbGXpESCMobo">
-</div>
-<h3 class="font-bold text-lg sm:text-xl text-primary">XTEND Indonesia</h3>
-<p class="text-secondary text-xs uppercase tracking-widest mb-2">Frontend Developer Intern</p>
-<p class="text-sm text-on-surface-variant leading-relaxed">Membangun antarmuka web yang responsif dan optimasi UI/UX untuk aplikasi perusahaan.</p>
-</div>
-<div class="md:w-1/2 hidden md:block opacity-0"></div>
-</div>
-<div class="relative flex flex-col md:flex-row-reverse items-start md:items-center gap-6 md:gap-8" data-aos="fade-left">
-<div class="w-full md:w-1/2 text-left hidden md:block">
-<div class="flex justify-start mb-3">
-<div class="w-14 h-14 bg-[#161B22] p-2 rounded-xl border border-white/10 flex items-center justify-center overflow-hidden">
-<img alt="PPKS Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwNjhYbtdqhT-jMdPnK7EHVvjRw0BncoqAjKx34ayHFL0R0PDNYtsvSjeo6bTTfoIjf15lbbVVAZVHl_GuoFftxmtxe2g0GbF4QisDZAgKttqsIXcDMd7rSHmBifAb0vbtnYYlAl6uwK-f7EO-0J5GsF5oCY-JgVqILuj87Ad0bvxRZS1k5fZZbNh0Dgn0NdR6oTVhhM9My3Rlw7Br08eBwNYsRA1iyrhbJGh-AKzfxz8SEg9-056NVrBvz7Ql-skUkFvvqGcH-Ys">
-</div>
-</div>
-<h3 class="font-bold text-xl text-primary">Pusat Penelitian Kelapa Sawit</h3>
-<p class="text-secondary text-xs uppercase tracking-widest mb-3">IT Support Intern</p>
-<p class="text-sm text-on-surface-variant leading-relaxed">Pemeliharaan hardware, troubleshooting jaringan, dan bantuan teknis operasional kantor.</p>
-</div>
-<div class="absolute left-4 md:static z-10 w-8 h-8 rounded-full bg-secondary flex items-center justify-center shrink-0 border-4 border-background shadow-[0_0_15px_rgba(210,187,255,0.4)] -translate-x-1/2 md:translate-x-0">
-<span class="material-symbols-outlined text-background text-sm font-bold">build</span>
-</div>
-<div class="w-full pl-10 md:pl-0 md:w-1/2 glass-card p-5 sm:p-6 rounded-xl md:hidden">
-<div class="w-14 h-14 mb-3 bg-[#161B22] p-2 rounded-xl border border-white/10 flex items-center justify-center overflow-hidden">
-<img alt="PPKS Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwNjhYbtdqhT-jMdPnK7EHVvjRw0BncoqAjKx34ayHFL0R0PDNYtsvSjeo6bTTfoIjf15lbbVVAZVHl_GuoFftxmtxe2g0GbF4QisDZAgKttqsIXcDMd7rSHmBifAb0vbtnYYlAl6uwK-f7EO-0J5GsF5oCY-JgVqILuj87Ad0bvxRZS1k5fZZbNh0Dgn0NdR6oTVhhM9My3Rlw7Br08eBwNYsRA1iyrhbJGh-AKzfxz8SEg9-056NVrBvz7Ql-skUkFvvqGcH-Ys">
-</div>
-<h3 class="font-bold text-lg sm:text-xl text-primary">Pusat Penelitian Kelapa Sawit</h3>
-<p class="text-secondary text-xs uppercase tracking-widest mb-2">IT Support Intern</p>
-<p class="text-sm text-on-surface-variant leading-relaxed">Pemeliharaan hardware, troubleshooting jaringan, dan bantuan teknis operasional kantor.</p>
-</div>
-<div class="md:w-1/2 hidden md:block opacity-0"></div>
-</div>
-</div>
-</div>
-</section>
+    <!-- Floating Audio Control Panel -->
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 max-w-[calc(100vw-2rem)]">
+        <div class="glass-card p-3 sm:p-4 rounded-full sm:rounded-[24px] flex items-center gap-3 shadow-2xl border border-white/50">
+            <button class="w-10 h-10 sm:w-12 sm:h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-md hover:scale-105 active:scale-95 transition-transform" id="playBtn" onclick="toggleMusic(event)">
+                <span class="material-symbols-outlined text-lg sm:text-xl" id="musicIcon">play_arrow</span>
+            </button>
+            <div class="pr-4 hidden sm:block">
+                <p class="text-[10px] font-bold text-on-surface-variant tracking-widest uppercase mb-0.5">Sedang Diputar</p>
+                <p class="text-xs font-bold text-primary truncate w-28 sm:w-36">Music Box: Happy Birthday</p>
+            </div>
+        </div>
+    </div>
 
-<section class="py-16 md:py-24">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-<div class="grid md:grid-cols-2 gap-8 md:gap-12">
-<div class="glass-card p-6 sm:p-8 rounded-2xl" data-aos="fade-up">
-<div class="flex items-center gap-4 mb-5">
-<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-primary-container">emoji_events</span>
-</div>
-<h2 class="text-2xl font-bold text-primary font-display-lg">Prestasi</h2>
-</div>
-<h3 class="font-bold text-lg sm:text-xl mb-2">LKS 2025 - IT Network Systems Administration</h3>
-<p class="text-on-surface-variant mb-5 text-sm sm:text-base leading-relaxed">Berpartisipasi dalam Lomba Kompetensi Siswa tingkat daerah, menunjukkan kemampuan dalam konfigurasi server, routing, switching, dan troubleshooting jaringan kompleks.</p>
-<div class="flex flex-wrap gap-2">
-<span class="tech-chip px-3 py-1 rounded-full text-xs">Cisco Packet Tracer</span>
-<span class="tech-chip px-3 py-1 rounded-full text-xs">MikroTik</span>
-<span class="tech-chip px-3 py-1 rounded-full text-xs">Linux Admin</span>
-</div>
-</div>
-<div class="glass-card p-6 sm:p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-<div class="flex items-center gap-4 mb-5">
-<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-secondary-container">school</span>
-</div>
-<h2 class="text-2xl font-bold text-secondary font-display-lg">Edukasi</h2>
-</div>
-<h3 class="font-bold text-lg sm:text-xl mb-2">SMK Negeri - Rekayasa Perangkat Lunak</h3>
-<p class="text-on-surface-variant mb-5 text-sm sm:text-base leading-relaxed">Lulus dengan predikat memuaskan, fokus pada pengembangan perangkat lunak, algoritma, dan pemrograman berbasis objek (OOP).</p>
-<div class="flex flex-wrap gap-2">
-<span class="bg-surface-container-highest text-on-surface px-3 py-1 rounded-full text-xs font-semibold">2021 - 2024</span>
-<span class="bg-surface-container-highest text-on-surface px-3 py-1 rounded-full text-xs font-semibold">Web Programming</span>
-</div>
-</div>
-</div>
-</div>
-</section>
+    <!-- Footer -->
+    <footer class="w-full py-12 sm:py-16 bg-white/30 backdrop-blur-md flex flex-col items-center gap-4 sm:gap-6 text-center border-t border-outline-variant/20 px-4">
+        <div class="text-base sm:text-lg font-bold text-primary tracking-[0.2em] font-display-birthday">KHALILA ALZAHRA GHAIRANI</div>
+        <p class="text-xs sm:text-sm text-on-surface-variant max-w-md leading-relaxed">
+            Dibuat dengan penuh doa dan kasih sayang untuk hari bahagia Khalila Alzahra Ghairani ❤️
+        </p>
+        <p class="text-[10px] sm:text-xs text-outline uppercase tracking-[0.3em] opacity-60 mt-4">
+            © 2026 Special Birthday Project
+        </p>
+    </footer>
 
-<section class="py-16 md:py-24 bg-surface-container-lowest" id="projects">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-<h2 class="text-[28px] sm:text-[32px] font-semibold text-primary text-center mb-12 md:mb-16 font-display-lg">Portofolio Terpilih</h2>
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="glass-card group rounded-xl overflow-hidden" data-aos="fade-up">
-<div class="h-44 sm:h-48 overflow-hidden relative">
-<img alt="Project 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQLhRRPir9cXGTVaAkdVMlqEoOcDDQpXkDcv-maB4UZROorBdt65bza1_MeEN7ja7L6jS95GPHoZhMm5JZQ4cVcRUbQY1SX-rHkhPdBuJQtShCguuuornUSs_vEIdbb6dNSLlBC9hQfyDq5kZDdPzAFE0vnTZTDt8Nf0yMOoKhTHEVAJ0bbPcEfbvrvltLBuJfRPBTjYJUCkyjNrRt1bMLN0CtRpjsGuGty0ZnQPbcv511rL9fF7hg8a544PmcYmN8jdDM43mddqs">
-<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-4xl">open_in_new</span>
-</div>
-</div>
-<div class="p-5 sm:p-6">
-<h3 class="font-bold text-lg mb-1">Pengaduan Masyarakat</h3>
-<p class="text-xs text-on-surface-variant mb-4">Sistem pelaporan aspirasi warga berbasis web.</p>
-<div class="flex flex-wrap gap-1.5 mb-5">
-<span class="tech-chip text-[10px] px-2 py-0.5 rounded">PHP</span>
-<span class="tech-chip text-[10px] px-2 py-0.5 rounded">MySQL</span>
-</div>
-<a class="text-primary text-sm font-bold flex items-center gap-1 hover:underline" href="#">View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-</div>
-<div class="glass-card group rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-<div class="h-44 sm:h-48 overflow-hidden relative">
-<img alt="Project 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvkABxosFBfLQHGEj4Rn9mB44ClTCV03ToongFuQslsr3b67C7vkzGNHQ2tY_BVM25dnm5cRAoze8fOx_rroWk8rvWw2SqTHIj0JyC89N-wg7C3qqMUsKSmtOyVLOS5IsH-3KV_rF7D7ST8EBPX0gCTSCswnTLmkikUQYX1cla1BisbjiN_3eh7hJGiv8mWA_Aa8dhmeiVpcr128iB1qeVh9JxOtpKECjEUl4LhlNiY5AXMKWtENZU4hXYoEN0Ls693sQ_nmcgdeA">
-<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-4xl">open_in_new</span>
-</div>
-</div>
-<div class="p-5 sm:p-6">
-<h3 class="font-bold text-lg mb-1">Penjualan Barang</h3>
-<p class="text-xs text-on-surface-variant mb-4">Point of Sales (POS) sederhana untuk inventory.</p>
-<div class="flex flex-wrap gap-1.5 mb-5">
-<span class="tech-chip text-[10px] px-2 py-0.5 rounded">JavaScript</span>
-<span class="tech-chip text-[10px] px-2 py-0.5 rounded">Tailwind</span>
-</div>
-<a class="text-primary text-sm font-bold flex items-center gap-1 hover:underline" href="#">View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-</div>
-<div class="glass-card group rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-<div class="h-44 sm:h-48 overflow-hidden relative">
-<img alt="Project 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcYTHI6gYW0G61OQr798y-un3KQnkQGu0sWzOLLKRz1g9Q-rkEJaV-KsZ8-BW5bv1x-mMRLcl8jDZq_jY8r-nFAnagjh2OugtPkutyEfnDm4e3PuiS3DxdqzDoNI7wjVD_JDJ9Xiw27UmmsWfZRWbp3YJyju0yRRnD2tPZ6R2qLimLlqksMJpIJcw_x2xlPuEETBiaS7ep17GDfLrqcb3zuQ1uDOkYSOOG7qtyVKO5uWCbkBVjHfz3mJmII0y-12-4UbzJEUDHAmE">
-<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-4xl">open_in_new</span>
-</div>
-</div>
-<div class="p-5 sm:p-6">
-<h3 class="font-bold text-lg mb-1">Personal Portfolio v1</h3>
-<p class="text-xs text-on-surface-variant mb-4">Website profil pribadi dengan desain futuristik.</p>
-<div class="flex flex-wrap gap-1.5 mb-5">
-<span class="tech-chip text-[10px] px-2 py-0.5 rounded">HTML</span>
-<span class="tech-chip text-[10px] px-2 py-0.5 rounded">AOS JS</span>
-</div>
-<a class="text-primary text-sm font-bold flex items-center gap-1 hover:underline" href="#">View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-</div>
-<div class="glass-card p-6 rounded-xl flex flex-col justify-center items-center opacity-60 border-dashed min-h-[280px]" data-aos="fade-up">
-<span class="material-symbols-outlined text-4xl text-on-surface-variant mb-3">more_horiz</span>
-<p class="text-on-surface-variant font-bold text-sm sm:text-base">More Projects Coming Soon</p>
-</div>
-</div>
-</div>
-</section>
+    <!-- JavaScript System -->
+    <script>
+        // --- SYNTHESIZER MUSIC ENGINE (ANTI LINK RUSAK) ---
+        let audioCtx = null;
+        let melodyTimeout = null;
+        let isPlaying = false;
+        let noteIndex = 0;
 
-<section class="py-16 md:py-24" id="contact">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
-<h2 class="text-[28px] sm:text-[32px] font-semibold text-primary text-center mb-12 md:mb-16 font-display-lg">Kenapa Memilih Saya?</h2>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="glass-card p-6 rounded-xl text-center flex flex-col items-center" data-aos="zoom-in">
-<span class="material-symbols-outlined text-primary text-4xl mb-3">speed</span>
-<h3 class="font-bold text-lg mb-2">Adaptif & Cepat Belajar</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed">Sebagai lulusan baru, saya memiliki semangat belajar tinggi untuk menguasai teknologi terbaru dalam waktu singkat.</p>
-</div>
-<div class="glass-card p-6 rounded-xl text-center flex flex-col items-center" data-aos="zoom-in" data-aos-delay="100">
-<span class="material-symbols-outlined text-primary text-4xl mb-3">hub</span>
-<h3 class="font-bold text-lg mb-2">Multidisiplin (Web & IT)</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed">Memahami sisi pengembangan aplikasi sekaligus infrastruktur jaringan, memberikan perspektif teknis yang lebih luas.</p>
-</div>
-<div class="glass-card p-6 rounded-xl text-center flex flex-col items-center" data-aos="zoom-in" data-aos-delay="200">
-<span class="material-symbols-outlined text-primary text-4xl mb-3">workspace_premium</span>
-<h3 class="font-bold text-lg mb-2">Berorientasi Solusi</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed">Berbekal pengalaman LKS dan magang, fokus saya adalah menyelesaikan tantangan teknis secara efektif.</p>
-</div>
-</div>
-</div>
-</section>
+        // Tangga nada "Happy Birthday" [Not, Durasi]
+        const melody = [
+            ['G4', 0.75], ['G4', 0.25], ['A4', 1], ['G4', 1], ['C5', 1], ['B4', 2],
+            ['G4', 0.75], ['G4', 0.25], ['A4', 1], ['G4', 1], ['D5', 1], ['C5', 2],
+            ['G4', 0.75], ['G4', 0.25], ['G5', 1], ['E5', 1], ['C5', 1], ['B4', 1], ['A4', 2],
+            ['F5', 0.75], ['F5', 0.25], ['E5', 1], ['C5', 1], ['D5', 1], ['C5', 2]
+        ];
 
-<footer class="border-t border-white/10 py-6 bg-background">
-<div class="max-w-[1200px] mx-auto px-4 sm:px-6 text-center text-on-surface-variant text-xs sm:text-sm">
-<p>© 2026 EFD.dev. Built with pure HTML, Tailwind, and JS. All rights reserved.</p>
-</div>
-</footer>
+        const frequencies = {
+            'G4': 392.00, 'A4': 440.00, 'B4': 493.88, 'C5': 523.25,
+            'D5': 587.33, 'E5': 659.25, 'F5': 698.46, 'G5': 783.99
+        };
 
-<script>
-    // 1. Initialize AOS Animation with optimized mobile settings
-    AOS.init({
-        duration: 800,
-        once: true,
-        easing: 'ease',
-        disable: 'mobile' // Menghindari lag di browser HP jadul/low-end
-    });
-
-    // 2. Optimized Mobile Responsive Menu Toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileNav = document.getElementById('mobile-nav');
-
-    menuToggle.addEventListener('click', (e) => {
-        e.stopPropagation();
-        mobileNav.classList.toggle('hidden');
-        const icon = menuToggle.querySelector('.material-symbols-outlined');
-        icon.textContent = mobileNav.classList.contains('hidden') ? 'menu' : 'close';
-    });
-
-    // Close menu when tapping anywhere outside
-    document.addEventListener('click', (e) => {
-        if (!mobileNav.classList.contains('hidden') && !mobileNav.contains(e.target) && e.target !== menuToggle) {
-            mobileNav.classList.add('hidden');
-            menuToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
         }
-    });
 
-    // Close mobile menu when clicking links
-    document.querySelectorAll('#mobile-nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileNav.classList.add('hidden');
-            menuToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+        function playNote(frequency, duration) {
+            if (!audioCtx || !isPlaying) return;
+
+            const osc = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            
+            osc.type = 'triangle'; // Suara lembut khas kotak musik / piano klasik
+            osc.frequency.setValueAtTime(frequency, audioCtx.currentTime);
+            
+            gainNode.gain.setValueAtTime(0.25, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration * 1.2);
+            
+            osc.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            
+            osc.start();
+            osc.stop(audioCtx.currentTime + duration * 1.2);
+        }
+
+        function playMelodyLoop() {
+            if (!isPlaying) return;
+
+            if (noteIndex >= melody.length) {
+                noteIndex = 0; // Ulang melodi dari awal jika selesai
+            }
+
+            const currentNote = melody[noteIndex];
+            const freq = frequencies[currentNote[0]];
+            const duration = currentNote[1] * 0.45; // Mengatur tempo lagu
+
+            playNote(freq, duration);
+            noteIndex++;
+
+            melodyTimeout = setTimeout(playMelodyLoop, duration * 1000 + 40);
+        }
+
+        function startMusic() {
+            initAudio();
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            if(!isPlaying) {
+                isPlaying = true;
+                playMelodyLoop();
+                updateUIState(true);
+            }
+        }
+
+        function stopMusic() {
+            isPlaying = false;
+            if (melodyTimeout) clearTimeout(melodyTimeout);
+            updateUIState(false);
+        }
+
+        function toggleMusic(event) {
+            if(event) event.stopPropagation();
+            if (isPlaying) {
+                stopMusic();
+            } else {
+                startMusic();
+            }
+        }
+
+        function updateUIState(musicPlaying) {
+            const icon = document.getElementById('musicIcon');
+            const navIcon = document.getElementById('navMusicIcon');
+            const navText = document.getElementById('navMusicText');
+            const playBtn = document.getElementById('playBtn');
+
+            if (musicPlaying) {
+                icon.innerText = 'pause';
+                navIcon.innerText = 'pause';
+                if(navText) navText.innerText = 'Jeda Musik';
+                playBtn.classList.add('animate-spin');
+                playBtn.style.animationDuration = '6s';
+            } else {
+                icon.innerText = 'play_arrow';
+                navIcon.innerText = 'play_arrow';
+                if(navText) navText.innerText = 'Putar Musik';
+                playBtn.classList.remove('animate-spin');
+            }
+        }
+
+        // Fungsi ketika tombol modal pembuka di klik
+        function startCelebration() {
+            const overlay = document.getElementById('welcome-overlay');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => overlay.remove(), 500);
+
+            startMusic();
+            triggerConfetti();
+        }
+
+        // --- INTERAKSI LAINNYA ---
+        function triggerConfetti() {
+            const count = 150;
+            const defaults = {
+                origin: { y: 0.6 },
+                colors: ['#fadadd', '#70585b', '#e1e1f5', '#ffe088']
+            };
+
+            function fire(particleRatio, opts) {
+                confetti({
+                    ...defaults,
+                    ...opts,
+                    particleCount: Math.floor(count * particleRatio)
+                });
+            }
+
+            fire(0.25, { spread: 30, startVelocity: 60 });
+            fire(0.2, { spread: 60 });
+            fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
+            fire(0.1, { spread: 120, startVelocity: 30, decay: 0.92, scalar: 1.2 });
+            fire(0.1, { spread: 120, startVelocity: 50 });
+        }
+
+        function showSurprise() {
+            const msg = document.getElementById('surpriseMsg');
+            const btn = document.getElementById('surpriseBtn');
+            const giftIcon = document.getElementById('giftIcon');
+            const giftBtnText = document.getElementById('giftBtnText');
+            
+            msg.classList.remove('hidden');
+            msg.classList.add('animate-bounce');
+            triggerConfetti();
+            
+            btn.disabled = true;
+            btn.classList.add('opacity-60', 'cursor-not-allowed');
+            giftIcon.innerText = 'done';
+            giftBtnText.innerText = 'Diterima dengan Kasih Sayang';
+        }
+
+        const balloonColors = ['#fadadd', '#debfc2', '#fbdbde', '#e1e1f5', '#ffe088'];
+        function createBalloon() {
+            const container = document.getElementById('balloon-container');
+            if (!container) return;
+            
+            const isMobile = window.innerWidth < 640;
+            if (isMobile && container.childElementCount > 8) return;
+            if (!isMobile && container.childElementCount > 20) return;
+
+            const balloon = document.createElement('div');
+            balloon.className = 'balloon';
+            
+            const color = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+            const size = isMobile ? Math.floor(Math.random() * 25) + 25 : Math.floor(Math.random() * 45) + 35; 
+            const left = Math.floor(Math.random() * 95);
+            const duration = Math.floor(Math.random() * 8) + 8;
+
+            balloon.style.left = `${left}vw`;
+            balloon.style.width = `${size}px`;
+            balloon.style.height = `${size * 1.2}px`;
+            balloon.style.backgroundColor = color;
+            balloon.style.borderRadius = '50% 50% 50% 50% / 40% 40% 60% 60%';
+            balloon.style.animationDuration = `${duration}s`;
+            balloon.style.boxShadow = 'inset -5px -5px 12px rgba(0,0,0,0.08)';
+            
+            const string = document.createElement('div');
+            string.style.width = '1px';
+            string.style.height = isMobile ? '35px' : '55px';
+            string.style.backgroundColor = 'rgba(112, 88, 91, 0.15)';
+            string.style.margin = '0 auto';
+            string.style.position = 'relative';
+            string.style.top = '100%';
+            balloon.appendChild(string);
+
+            container.appendChild(balloon);
+            setTimeout(() => { balloon.remove(); }, duration * 1000);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            setInterval(createBalloon, window.innerWidth < 640 ? 1800 : 1000);
+            
+            const observerOptions = { 
+                root: null,
+                threshold: 0.1,
+                rootMargin: "0px 0px -40px 0px"
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-ready').forEach(el => observer.observe(el));
         });
-    });
-
-    // 3. Typewriter Effect Logic
-    const roles = ["NETWORK ADMINISTRATOR", "FRONTEND DEVELOPER", "IT SUPPORT"];
-    let currentRoleIndex = 0;
-    let currentCharIndex = 0;
-    let isDeleting = false;
-    const typingSpeed = 120;
-    const deletingSpeed = 60;
-    const delayBetweenRoles = 1800;
-    const typingElement = document.getElementById('typing-roles');
-
-    function type() {
-        const currentRole = roles[currentRoleIndex];
-        
-        if (isDeleting) {
-            typingElement.textContent = currentRole.substring(0, currentCharIndex - 1);
-            currentCharIndex--;
-        } else {
-            typingElement.textContent = currentRole.substring(0, currentCharIndex + 1);
-            currentCharIndex++;
-        }
-
-        if (!isDeleting && currentCharIndex === currentRole.length) {
-            setTimeout(() => isDeleting = true, delayBetweenRoles);
-        } else if (isDeleting && currentCharIndex === 0) {
-            isDeleting = false;
-            currentRoleIndex = (currentRoleIndex + 1) % roles.length;
-        }
-
-        setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        type();
-    });
-</script>
-
-
-</body></html>
+    </script>
+</body>
+</html>
